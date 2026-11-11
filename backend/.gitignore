@@ -1,0 +1,81 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+.env.*
+
+# macOS
+.DS_Store
+dump
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Python Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+
+# Ruff
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+
+# Audio & Video Files
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.webm
+downloads/
+audio/
+chunks/
+
+# Whisper Cache
+.cache/
+models/
+
+# ChromaDB
+chroma/
+chromadb/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS files
+Thumbs.db

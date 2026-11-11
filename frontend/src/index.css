@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #08090D;
+    --bg-surface: #0D0E14;
+    --bg-card: #14151C;
+    --bg-input: #191A23;
+    --border-color: #292A33;
+    --accent-purple: #A855F7;
+    --accent-blue: #3B82F6;
+    --text-primary: #F8FAFC;
+    --text-secondary: #A1A1AA;
+    --success: #34D399;
+    --error: #F87171;
+  }
+
+  body {
+    background-color: #08090D;
+    color: #F8FAFC;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0E14;
+}
+::-webkit-scrollbar-thumb {
+  background: #292A33;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4150;
+}
+
+/* Gradient Utilities */
+.btn-gradient {
+  background: linear-gradient(135deg, #A855F7 0%, #3B82F6 100%);
+  transition: all 0.2s ease;
+}
+.btn-gradient:hover {
+  opacity: 0.92;
+  box-shadow: 0 4px 20px -2px rgba(168, 85, 247, 0.4);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 20%, #C084FC 70%, #60A5FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-panel {
+  background: rgba(20, 21, 28, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(41, 42, 51, 0.8);
+}
